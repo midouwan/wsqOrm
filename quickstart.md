@@ -5,7 +5,7 @@
 
 使用前最好使用最新版,mvn仓库没有可以下载源码打包
 
-## 1.引入jar，
+## 1.引入jar
 ```
 <dependency>
 	<groupId>com.wsq</groupId>
@@ -14,7 +14,8 @@
 </dependency>
 
 ```
-##2.java数据映射实体模型
+
+## 2.java数据映射实体模型
 ```
 @Setter
 @Getter
@@ -30,15 +31,15 @@ public class Template {
 ```
 ##### @Column注解标识实体列信息，jdbcType为数据库JDBCType,默认为varChar,primaryKey主键标识默认为false
 
-##3.dao继承defaultBaseDao,泛型为当前实体
+## 3.dao继承defaultBaseDao,泛型为当前实体
 ```
 @Repository
 public class TemplateDao extends DefaultBaseDao<Template> {
 }
 ```
-##4.配置数据源，与springboot一致，不做介绍
+## 4.配置数据源，与springboot一致，不做介绍
 
-##5.在yml文件配置sql，可以单独配置一个文件如application-wsq.yml，导入使用include
+## 5.在yml文件配置sql，可以单独配置一个文件如application-wsq.yml，导入使用include
 ```
 wsq:
   result:
@@ -64,12 +65,12 @@ wsq:
       T_TEMPLATE_INFO:
         q_byNo: "select * from ${wsq.sql.tables.T_TEMPLATE_INFO} where no = #{no} order by sort asc:TemplateInfo"
 ```
-##6.事务支持
+## 6.事务支持
 ```
 入口类配置
 @EnableTransactionManagement支持spring注解式事务
 ```
-##7.支持CRUD
+## 7.支持CRUD
 ```
 //插入
 
