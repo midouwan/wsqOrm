@@ -5,4 +5,7 @@
 * [快速使用](/quickstart.md)
 
 ## 维护者
-米豆丸
+米豆丸(wangshuangquan-a@qq.com)
+
+## 交流
+<img src="https://github.com/WangShuangQuan-A/wsqOrm/blob/master/src/img/qq.png" width="30%" height="30%" />
