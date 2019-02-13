@@ -37,6 +37,7 @@ public class TemplateDao extends DefaultBaseDao<Template> {
 }
 ```
 ##4.配置数据源，与springboot一致，不做介绍
+
 ##5.在yml文件配置sql，可以单独配置一个文件如application-wsq.yml，导入使用include
 ```
 wsq:
