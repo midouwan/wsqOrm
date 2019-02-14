@@ -3,16 +3,15 @@
 ## *完美结合springboot，原来sql复杂的xml配置文件由yml代替,从繁琐的sql配置中解放<br />
 ## *待续。。。<br />
 
-使用前最好使用最新版,mvn仓库没有可以下载源码打包
+使用前最好使用最新版,mvn仓库没有可以下载源码打包可能与步骤1示例不同
 
 ## 1.引入jar
 ```
 <dependency>
-	<groupId>com.wsq</groupId>
-	<artifactId>orm</artifactId>
-    <version>1.0.0-RELEASE</version>
+    <groupId>com.wsq.orm</groupId>
+    <artifactId>wsq-orm-autoconfigure</artifactId>
+    <version>1.0-SNAPSHOT</version>
 </dependency>
-
 ```
 
 ## 2.java数据映射实体模型
